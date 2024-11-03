@@ -1,0 +1,46 @@
+<section class="flex min-h-dvh w-full flex-col items-center">
+    <h2 class="w-full bg-gray-900 p-4 text-center text-6xl font-bold text-gray-50">Borrar Materia</h2>
+    <form class="flex h-full w-2/3 flex-col items-center justify-center rounded-md py-4" method="POST" action="/Classes/Delete">
+        <input type="hidden" data-val="true" data-val-required="The Id field is required." id="Id" name="Id" value="">
+        
+        <div class="flex w-2/3 flex-col self-center">
+            <label for="Name">Name</label>
+            <input class="border-2 mx-1 rounded-md border-gray-900 p-1" disabled="" type="text" data-val="true" data-val-required="The Name field is required." id="Name" name="Name" value="">
+            <span class="text-red-600 field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span>
+        </div>
+
+
+        <div class="flex w-2/3 flex-col self-center">
+            <label for="CourseId">Carrera o Curso</label>
+            <select class="border-2 mx-1 rounded-md border-gray-900 p-1" disabled="" data-val="true" data-val-required="Debes Seleccionar una Carrera" id="CourseId" name="CourseId">
+                <option value="fnewfnwefef">Tecnicatura Superior en Programacion</option>
+            </select>
+            <span class="text-red-600 field-validation-valid" data-valmsg-for="CourseId" data-valmsg-replace="true"></span>
+        </div>
+        <div class="flex w-2/3 flex-col self-center">
+            <label for="UserId">Docente</label>
+            <select class="border-2 mx-1 rounded-md border-gray-900 p-1" disabled="" data-val="true" data-val-required="Debes Seleccionar un Docente" id="UserId" name="UserId">
+                <option value="fnewfnwefef">Yamila Artigas</option>
+            </select>
+            <span class="text-red-600 field-validation-valid" data-valmsg-for="UserId" data-valmsg-replace="true"></span>
+        </div>
+
+        <div class="flex w-2/3 flex-col self-center">
+            <label for="Description">Description</label>
+            <textarea class="border-2 mx-1 rounded-md border-gray-900 p-1" disabled="" data-val="true" data-val-required="The Description field is required." id="Description" name="Description"></textarea>
+            <span class="text-red-600 field-validation-valid" data-valmsg-for="Description" data-valmsg-replace="true"></span>
+        </div>
+        <div class="flex w-2/3 justify-between">
+            <button type="submit" class="mt-4 w-40 rounded-md border border-transparent bg-gradient-to-tr from-red-800 to-red-700 px-4 py-2 text-center text-sm text-white shadow-md transition-all hover:shadow-lg hover:bg-slate-700 focus:bg-slate-700 focus:shadow-none active:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                <i class="fa fa-trash" aria-hidden="true"></i>  Borrar
+            </button>
+            <a class="mt-4 w-40 rounded-md border border-transparent bg-gradient-to-tr from-green-800 to-green-700 px-4 py-2 text-center text-sm text-white shadow-md transition-all hover:shadow-lg hover:bg-slate-700 focus:bg-slate-700 focus:shadow-none active:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" href="/Classes">
+                Volver
+            </a>
+
+        </div>
+
+
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8PsupENnyaxJsSE9YBIZHT475GREgw6H6R3K2lM4AkVNXmBnJ2jK7qvcl3_DJw5lYypzy7FVE1xOLWvTiABz7CRO9pMbQtWJFO9VJs6vuJkt5WcpsWHHoMAOZI_ajo7zGKencURjLAF_K1vYbsvUZ18"></form>
+
+</section>

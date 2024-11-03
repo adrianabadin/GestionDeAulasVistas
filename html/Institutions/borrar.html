@@ -1,0 +1,40 @@
+<section class="flex min-h-dvh w-full flex-col items-center">
+    <h2 class="w-full bg-gray-900 p-4 text-center text-6xl font-bold text-gray-50">Eliminar Institucion</h2>
+    <form class="flex h-full w-2/3 flex-col items-center justify-center rounded-md py-4" method="POST" action="/Account/Edit">
+        <input type="hidden" data-val="true" data-val-required="The Id field is required." id="Id" name="Id" value="">
+        
+        <div class="flex w-2/3 flex-col self-center">
+            <label for="Name">Nombre de la Institucion</label>
+            <input class="border-2 mx-1 rounded-md border-gray-900 p-1" disabled="" type="text" data-val="true" data-val-required="The Nombre de la Institucion field is required." id="Name" name="Name" value="">
+            <span class="text-red-600 field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span>
+        </div>
+
+        <div class="flex w-2/3 flex-col self-center">
+            <label for="PhoneNumber">Telefono</label>
+            <input class="border-2 mx-1 rounded-md border-gray-900 p-1" disabled="" type="tel" data-val="true" data-val-phone="The Telefono field is not a valid phone number." id="PhoneNumber" name="PhoneNumber" value="">
+            <span class="text-red-600 field-validation-valid" data-valmsg-for="PhoneNumber" data-valmsg-replace="true"></span>
+        </div>
+        <div class="flex w-2/3 flex-col self-center">
+            <label for="Email">Correo Electronico</label>
+            <input class="border-2 mx-1 rounded-md border-gray-900 p-1" disabled="" type="email" data-val="true" data-val-email="The Correo Electronico field is not a valid e-mail address." id="Email" name="Email" value="">
+            <span class="text-red-600 field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+        </div>
+        <div class="flex w-2/3 flex-col self-center">
+            <label for="Description">Descripcion</label>
+            <textarea class="border-2 mx-1 rounded-md border-gray-900 p-1" disabled="" data-val="true" data-val-required="The Descripcion field is required." id="Description" name="Description"></textarea>
+            <span class="text-red-600 field-validation-valid" data-valmsg-for="Description" data-valmsg-replace="true"></span>
+        </div>
+        <div class="flex w-2/3 justify-between">
+            <button type="submit" class="mt-4 w-40 rounded-md border border-transparent bg-gradient-to-tr from-red-800 to-red-700 px-4 py-2 text-center text-sm text-white shadow-md transition-all hover:shadow-lg hover:bg-rose-700 focus:bg-rose-700 focus:shadow-none active:bg-rose-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                <i class="fa fa-graduation-cap" aria-hidden="true"></i>  Borrar
+            </button>
+            <a class="mt-4 w-40 rounded-md border border-transparent bg-gradient-to-tr from-green-800 to-green-700 px-4 py-2 text-center text-sm text-white shadow-md transition-all hover:shadow-lg hover:bg-slate-700 focus:bg-slate-700 focus:shadow-none active:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" href="/">
+                Volver
+            </a>
+
+        </div>
+
+
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8PsupENnyaxJsSE9YBIZHT75pY35Tfv6TcUTtKRLOMj8ZbtYD7A54NF-F8dr4CGd3atGLSq5I7_S4fNlt3d1JnQ3vxeHYRhcM7XGj43mtxIvUijCUGeoRzo0PiKED7LROrLAcZ4T-Qd6JqF6YaVSXfE"></form>
+
+</section>

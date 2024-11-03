@@ -1,0 +1,69 @@
+<section class="flex min-h-dvh w-full flex-col items-center">
+    <h2 class="w-full bg-gray-900 p-4 text-center text-6xl font-bold text-gray-50">Editar Usuario</h2>
+    <form class="flex h-full w-2/3 flex-col items-center justify-center rounded-md py-4" method="post" action="/Account/Edit">
+        <input type="hidden" data-val="true" data-val-required="The Id field is required." id="Id" name="Id" value="">
+        
+        <div class="flex w-2/3 flex-col self-center">
+            <label for="FirstName">Nombre</label>
+            <input class="border-2 mx-1 rounded-md border-gray-900 p-1" type="text" data-val="true" data-val-required="El campo nombre es obligatorio" id="FirstName" name="FirstName" value="">
+            <span class="text-red-600 field-validation-valid" data-valmsg-for="FirstName" data-valmsg-replace="true"></span>
+        </div>
+        <div class="flex w-2/3 flex-col self-center">
+            <label for="LastName">Apellido</label>
+            <input class="border-2 mx-1 rounded-md border-gray-900 p-1" type="text" data-val="true" data-val-required="El campo apellido es obligatorio" id="LastName" name="LastName" value="">
+            <span class="text-red-600 field-validation-valid" data-valmsg-for="LastName" data-valmsg-replace="true"></span>
+        </div>
+        <div class="flex w-2/3 flex-col self-center">
+            <label for="Dni">DNI</label>
+            <input class="border-2 mx-1 rounded-md border-gray-900 p-1" type="text" data-val="true" data-val-required="El campo DNI es obligatorio" id="Dni" name="Dni" value="">
+            <span class="text-red-600 field-validation-valid" data-valmsg-for="Dni" data-valmsg-replace="true"></span>
+        </div>
+        <div class="flex w-2/3 flex-col self-center">
+            <label for="EmployeeCode">Legajo</label>
+            <input class="border-2 mx-1 rounded-md border-gray-900 p-1" type="text" data-val="true" data-val-required="El campo legajo es obligatorio" id="EmployeeCode" name="EmployeeCode" value="">
+            <span class="text-red-600 field-validation-valid" data-valmsg-for="EmployeeCode" data-valmsg-replace="true"></span>
+        </div>
+        <div class="flex w-2/3 flex-col self-center">
+            <label for="Email">Nombre de Usuario</label>
+            <input class="border-2 mx-1 rounded-md border-gray-900 p-1" type="email" data-val="true" data-val-email="El nombre de usuario debe ser un email valido" data-val-required="El campo nombre de usuario es obligatorio" id="Email" name="Email" value="">
+            <span class="text-red-600 field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+        </div>
+        <div class="flex w-2/3 flex-col self-center">
+            <label for="PhoneNumber">Telefono</label>
+            <input class="border-2 mx-1 rounded-md border-gray-900 p-1" type="tel" data-val="true" data-val-phone="Debe ser un telefono valido" data-val-required="El campo telefono es obligatorio" id="PhoneNumber" name="PhoneNumber" value="">
+            <span class="text-red-600 field-validation-valid" data-valmsg-for="PhoneNumber" data-valmsg-replace="true"></span>
+        </div>
+        <div class="flex w-2/3 flex-col self-center">
+            <label for="Role">Rol</label>
+            <select class="border-2 mx-1 rounded-md border-gray-900 p-1" id="Role" name="Role">
+                <option value="ADMINISTRADOR">Administrador</option>
+                <option value="DOCENTE">Docente</option>
+                <option value="ALUMNO">Alumno</option>
+            </select>         
+        </div>
+        <div class="flex w-2/3 items-start justify-start self-center align-top">
+            <div class="flex w-1/2 flex-col items-start pe-1">
+                <label for="Password">Password</label>
+                <input class="border-2 w-full rounded-md border-gray-900" type="text" data-val="true" data-val-required="El campo clave es obligatorio" id="Password" name="Password" value="">
+                <span class="text-red-600 field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+            </div>
+            <div class="ps- flex w-1/2 flex-col items-start">
+                <label for="Password2">Confirm Password</label>
+                <input class="border-2 w-full rounded-md border-gray-900" type="text" data-val="true" data-val-equalto="Las contraseñas deben coincidir" data-val-equalto-other="*.Password" data-val-required="El campo clave es obligatorio" id="Password2" name="Password2" value="">
+                <span class="text-red-600 field-validation-valid" data-valmsg-for="Password2" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+        <div class="flex w-2/3 justify-between">
+            <button type="submit" class="mt-4 w-40 rounded-md border border-transparent bg-gradient-to-tr from-blue-800 to-blue-700 px-4 py-2 text-center text-sm text-white shadow-md transition-all hover:shadow-lg hover:bg-slate-700 focus:bg-slate-700 focus:shadow-none active:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                Editar Usuario
+            </button>
+            <a class="mt-4 w-40 rounded-md border border-transparent bg-gradient-to-tr from-green-800 to-green-700 px-4 py-2 text-center text-sm text-white shadow-md transition-all hover:shadow-lg hover:bg-slate-700 focus:bg-slate-700 focus:shadow-none active:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" href="/">
+                Volver
+            </a>
+
+        </div>
+
+
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8PsupENnyaxJsSE9YBIZHT4mk4117J9VfFV50-pyMYyoW3Kt3hBD9eYg-u75Bxrau-S4tnDqzYo_4N9Rjm5fysog9Wcx-chC4QHXwCUKqfgziZpRwNQFa4byaQ-vd-kkjzhNw2DFklIIxpjZx65jbUc"></form>
+
+</section>
